@@ -39,17 +39,17 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (Input.touchCount > 0)
         {
             touchPosition = Input.GetTouch(index: 0).position;
-            return true;
+            //return true;
 
-            // // don't place the object on tap on the UI elements
-            // if (touchPosition.y < Screen.height - 400) //&& touchPosition.y > Screen.height + 400)
-            // {
-            //     return true;
-            // }
-            // else
-            // {
-            //     return false;
-            // }
+            // don't place the object on tap on the UI elements
+            if (touchPosition.y < Screen.height - 400) //&& touchPosition.y > Screen.height + 400)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         touchPosition = default;
