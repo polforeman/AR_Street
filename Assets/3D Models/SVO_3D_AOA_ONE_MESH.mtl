@@ -1,0 +1,250 @@
+# Blender MTL File: 'SVO_3D_AOA_ONE_MESH.blend'
+# Material Count: 22
+
+newmtl 00_ANTRAZIT.001
+Ns 84.027792
+Ka 1.000000 1.000000 1.000000
+Kd 0.021811 0.021811 0.021811
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_BASE.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_CShape.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 0.500000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalAluminumCastDirty001_NRM_3K_METALNESS.jpg
+map_Ns D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalAluminumCastDirty001_ROUGHNESS_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalAluminumCastDirty001_COL_3K_METALNESS.jpg
+
+newmtl 00_GEAR01.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_GEAR01.004
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR01.005
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR02.002
+Ns 56.250000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR02.003
+Ns 56.250000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR03.004
+Ns 35.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_GEAR03.005
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR03.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_GEAR03.007
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 50.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_MOON.002
+Ns 440.245797
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl 00_MOON.003
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_PLANETS.001
+Ns 575.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 15.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+map_Ns D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_ROUGHNESS_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_SCREEN.STATIC.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd -s 2.000000 2.000000 2.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\SCREEN.STATIC.jpg
+map_Ke -s 2.000000 2.000000 2.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\SCREEN.STATIC.jpg
+
+newmtl 00_Sun.001
+Ns 574.707361
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.400000 0.400000 0.400000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl 00_TRIANGLE.001
+Ns 143.999983
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl 00_TRIANGLE02.001
+Ns 56.250000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump -bm 10.000000 D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_NRM_3K_METALNESS.jpg
+refl D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\MetalCopperDirty001_COL02_3K_METALNESS.tif
+
+newmtl 00_TUBES_02.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.700000 0.700000 0.700000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\RustPlain029_NRM_3K.jpg
+
+newmtl 0_SUPPORTS.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\RustPlain029_NRM_3K.jpg
+
+newmtl Material.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\SVO_C_Achiv_Sculptur_Mood-2_BW.png
+map_Ks D:\\Work\\SPACECOUNCIL\\LAAS\\Venice Exhibition\\Mutualities\\Virtual bombing\\Configurable Street\\Unity ARCore Test\\AR_Test03\\Assets\\textures\\SVO_C_Achiv_Sculptur_Mood-2_BW.png
