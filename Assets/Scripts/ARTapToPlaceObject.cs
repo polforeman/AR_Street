@@ -15,11 +15,12 @@ public class ARTapToPlaceObject : MonoBehaviour
     
     public GameObject objectToInstantiate;
 
-    private GameObject spawnedObject;
+    public static GameObject spawnedObject;
     private ARRaycastManager _arRaycastManager;
     private Vector2 touchPosition;
     public static float streetRotY;
     public Slider rotSlider;
+    public GameObject myCapsule;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     
@@ -27,6 +28,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     private void Awake()
     {
         _arRaycastManager = GetComponent<ARRaycastManager>();
+        //myCapsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
     }
 
     public void getSlider()
@@ -34,6 +36,8 @@ public class ARTapToPlaceObject : MonoBehaviour
         streetRotY = rotSlider.value;
     }
 
+    
+    // returns a bool for is there current a touch going on or not, also outs the touchPosition
     bool TryGetTouchPosition(out Vector2 touchPosition)
     {
         if (Input.touchCount > 0)
@@ -56,7 +60,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         return false;
     }
 
-    // public static bool IsPointOverUIObject(this Vector2 pos)
+    // bool IsPointOverUIObject(Vector2 pos)
     // {
     //     if (EventSystem.current.IsPointerOverGameObject())
     //     {
@@ -79,18 +83,37 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
 
+        // true if a raycast from touchPosition hits a PlaneWithinPolygon
         if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
+            // saves the first hit as hitPose
             var hitPose = hits[0].pose;
 
             if(spawnedObject == null)
             {
                 spawnedObject = Instantiate(objectToInstantiate, hitPose.position, hitPose.rotation);
             }
-            else
-            {
-                spawnedObject.transform.position = hitPose.position;
-            }
+
+            
+
+            // for (int i = 0; i < 10; i++)
+            // {
+            //     Vector3 currentPos = new Vector3 (i, i, 0);
+            //     GameObject currentInstance = Instantiate(myCapsule, currentPos, spawnedTransform.rotation);
+            //     currentInstance.transform.SetParent(spawnedTransform);
+                
+            // }
+
+
+
+            
+            //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT. TURNED OFF FOR NOW TO ALLOW
+            // else
+            // {
+            //     spawnedObject.transform.position = hitPose.position;
+            // }
+
+            //var spawnedTransform = spawnedObject.transform;
         }
 
     }
