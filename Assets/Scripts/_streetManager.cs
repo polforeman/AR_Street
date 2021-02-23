@@ -18,8 +18,7 @@ public class _streetManager : MonoBehaviour
     void Update()
     {
         streetRot = ARTapToPlaceObject.streetRotY;
-        gameObject.transform.rotation =
-        Quaternion.Euler(0, streetRot, 0);
+        gameObject.transform.rotation = Quaternion.Euler(0, streetRot, 0);
         // currentStreet = 
     }
 

@@ -1596,7 +1596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117079291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 723.3, y: 2408.274, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2750,7 +2750,6 @@ GameObject:
   - component: {fileID: 1955261966}
   - component: {fileID: 1955261965}
   - component: {fileID: 1955261964}
-  - component: {fileID: 1955261963}
   m_Layer: 5
   m_Name: InstantiaTRON
   m_TagString: Untagged
@@ -2778,20 +2777,6 @@ RectTransform:
   m_AnchoredPosition: {x: -333, y: 1117}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1955261963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955261961}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad888e2cc55f3346bb87bacaab92ab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstSpawnedObject: {fileID: 7407732045854243762, guid: ae270b378ece1684cb3e211c88951aba, type: 3}
-  secondSpawnedObject: {fileID: 7407732045854243762, guid: 7ba710dc3275d294b83e6dc82f560586, type: 3}
 --- !u!114 &1955261964
 MonoBehaviour:
   m_ObjectHideFlags: 0

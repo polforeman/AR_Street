@@ -77,6 +77,12 @@ public class ARTapToPlaceObject : MonoBehaviour
     // }
 
     // Update is called once per frame
+
+    void Start()
+    {
+        //spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,0,0), Quaternion.identity);
+    }
+
     void Update()
     {
         
@@ -93,8 +99,13 @@ public class ARTapToPlaceObject : MonoBehaviour
             {
                 spawnedObject = Instantiate(objectToInstantiate, hitPose.position, hitPose.rotation);
             }
+            //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT. TURNED OFF FOR NOW TO ALLOW
+            else
+            {
+                spawnedObject.transform.position = hitPose.position;
+            }
+        }
 
-            
 
             // for (int i = 0; i < 10; i++)
             // {
@@ -107,14 +118,10 @@ public class ARTapToPlaceObject : MonoBehaviour
 
 
             
-            //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT. TURNED OFF FOR NOW TO ALLOW
-            // else
-            // {
-            //     spawnedObject.transform.position = hitPose.position;
-            // }
+            
 
             //var spawnedTransform = spawnedObject.transform;
-        }
+        
 
     }
 }
