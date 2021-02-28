@@ -80,7 +80,8 @@ public class ARTapToPlaceObject : MonoBehaviour
 
     void Start()
     {
-        //spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,0,0), Quaternion.identity);
+        if(Application.isEditor)
+        {spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,0,0), Quaternion.identity);}
     }
 
     void Update()
@@ -97,8 +98,11 @@ public class ARTapToPlaceObject : MonoBehaviour
 
             if(spawnedObject == null)
             {
-                spawnedObject = Instantiate(objectToInstantiate, hitPose.position, hitPose.rotation);
+                spawnedObject = Instantiate(objectToInstantiate, 
+                hitPose.position, 
+                hitPose.rotation);
             }
+
             //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT. TURNED OFF FOR NOW TO ALLOW
             else
             {
