@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -12,17 +12,32 @@ using UnityEngine.EventSystems;
 
 public class ARTapToPlaceObject : MonoBehaviour
 {
+    [SerializeField] private GameObject arObj;
+    [SerializeField] private Camera arCam;
+    [SerializeField] private ARRaycastManager _raycastManager;
+
+    public static GameObject spawnedWelcome;
+    [SerializeField] private GameObject welcomeSign;
+    public GameObject welcomeParent;
+    public static GameObject instWelcomeParent;
+
+    List<ARRaycastHit> _hits = new List<ARRaycastHit>();
+    
     
     public GameObject objectToInstantiate;
 
     public static GameObject spawnedObject;
-    private ARRaycastManager _arRaycastManager;
+    public static ARRaycastManager _arRaycastManager;
     private Vector2 touchPosition;
     public static float streetRotY;
     public Slider rotSlider;
     public GameObject myCapsule;
+    //private bool IsPointerOverUI;
+    
 
-    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    private Touch touch;
+
+    public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     
     // Start is called before the first frame update
     private void Awake()
@@ -46,7 +61,8 @@ public class ARTapToPlaceObject : MonoBehaviour
             //return true;
 
             // don't place the object on tap on the UI elements
-            if (touchPosition.y < Screen.height - 400) //&& touchPosition.y > Screen.height + 400)
+            // REMEMBER THAT THE SCREEN SIZE IS RESCALED
+            if (touchPosition.y < Screen.height - 350 && touchPosition.y > 200)
             {
                 return true;
             }
@@ -60,28 +76,25 @@ public class ARTapToPlaceObject : MonoBehaviour
         return false;
     }
 
-    // bool IsPointOverUIObject(Vector2 pos)
-    // {
-    //     if (EventSystem.current.IsPointerOverGameObject())
-    //     {
-    //         return false;
-    //     }
-
-    //     PointerEventData eventPosition = new PointerEventData(EventSystem.current);
-    //     eventPosition.position = new Vector2 (pos.x, pos.y);
-
-    //     List<RaycastResult> results = new List<RaycastResult>();
-    //     EventSystem.current.RaycastAll(eventPosition, results);
-
-    //     return results.Count > 0;
-    // }
-
-    // Update is called once per frame
 
     void Start()
     {
+        
+        Invoke("InstWelcomeParent", 4.0f);
+        
+        
+        Vector3 randomStreetRot = new Vector3 (0f, Random.Range(0f, 360f), 0f);
+        
         if(Application.isEditor)
-        {spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,0,0), Quaternion.identity);}
+        {
+            spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,-1.5f,0), Quaternion.identity);
+            //spawnedObject = Instantiate(objectToInstantiate, new Vector3 (0,-1.5f,0), Quaternion.Euler(randomStreetRot));
+        }
+
+        Debug.Log("steet rot is " + randomStreetRot);
+
+
+        
     }
 
     void Update()
@@ -90,7 +103,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
 
-        // true if a raycast from touchPosition hits a PlaneWithinPolygon
+        //true if a raycast from touchPosition hits a PlaneWithinPolygon
         if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             // saves the first hit as hitPose
@@ -98,34 +111,52 @@ public class ARTapToPlaceObject : MonoBehaviour
 
             if(spawnedObject == null)
             {
-                spawnedObject = Instantiate(objectToInstantiate, 
+                spawnedObject = Instantiate
+                (objectToInstantiate, 
                 hitPose.position, 
                 hitPose.rotation);
-            }
+                instWelcomeParent.SetActive(false);
 
-            //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT. TURNED OFF FOR NOW TO ALLOW
+                //Previewer.getSpawnedObject();
+                
+            }
+            //THIS ALLOWS REPOSITIONING OF THE SPAWNED OBJECT
+
+            //CHANGED TO REPOSITION THE LATEST STRIP!
             else
             {
-                spawnedObject.transform.position = hitPose.position;
+                instWelcomeParent.SetActive(false);
+                Debug.Log("street has been spawned");
+                //Previewer.newStripWithPose(hitPose.position);
+                //Previewer.instantiatedStrip.transform.position = hitPose.position;
+                //Previewer.currentStrip.transform.position = hitPose.position;
+            }
+
+
+        } 
+
+    }
+
+
+    void InstWelcomeParent()
+    { 
+        instWelcomeParent = Instantiate(welcomeParent, new Vector3 (0, 0, 0), Quaternion.identity);
+        
+        for(int i = 0; i < 4; i++)
+        {
+            for(int j = 0; j < 4; j++)
+            {
+                float randZ = Random.Range(-1.5f, 0.7f);
+                
+                Vector3 welcomePos = new Vector3((i * 3f)- 5f, randZ,  (j * 3f)- 5f);
+                spawnedWelcome = Instantiate(welcomeSign, welcomePos, Quaternion.identity);
+                spawnedWelcome.transform.SetParent(instWelcomeParent.transform);
             }
         }
 
-
-            // for (int i = 0; i < 10; i++)
-            // {
-            //     Vector3 currentPos = new Vector3 (i, i, 0);
-            //     GameObject currentInstance = Instantiate(myCapsule, currentPos, spawnedTransform.rotation);
-            //     currentInstance.transform.SetParent(spawnedTransform);
-                
-            // }
-
-
-
-            
-            
-
-            //var spawnedTransform = spawnedObject.transform;
+        instWelcomeParent.transform.Rotate(0, 45, 0);
+        //spawnedWelcome = Instantiate(welcomeSign, new Vector3 (0f, -1f, 1.5f), Quaternion.identity);
         
-
     }
+
 }
